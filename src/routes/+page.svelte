@@ -4,8 +4,6 @@
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
 </script>
 
-
-
 <section id="about-me">
 	<div class="about-container">
 		<div class="left-section">
@@ -84,27 +82,20 @@
 	</div>
 </section>
 
-
-
-
-
-
-
 <style>
-	/* Set the overall background color */
 	body {
 		font-family: sans-serif;
 		margin: 0;
-		background-color: #E0DFE0; /* Overall background color */
+		background-color: #E0DFE0;
 		min-height: 100vh;
-		scroll-behavior: smooth; /* Smooth scrolling */
+		scroll-behavior: smooth;
 	}
 
 	header {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background: url('colores.png') no-repeat center center/cover; /* Parallax background */
+		background: url('colores.png') no-repeat center center/cover;
 		padding: 0;
 		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 		position: sticky;
@@ -118,10 +109,10 @@
 		justify-content: center;
 		align-items: center;
 		width: auto;
-		background-color: rgba(224, 223, 224, 0.8); /* Semi-transparent nav background */
+		background-color: rgba(224, 223, 224, 0.8);
 		padding: 1em 0;
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-		backdrop-filter: blur(5px); /* Background blur */
+		backdrop-filter: blur(5px);
 	}
 
 	ul {
@@ -165,18 +156,17 @@
 
 	nav a:hover {
 		color: var(--color-theme-1);
-		transform: scale(1.1) translateY(-3px); /* Scale and move up on hover */
-		text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Add text shadow on hover */
+		transform: scale(1.1) translateY(-3px);
+		text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 	}
 
-	/* About Me section styling */
 	#about-me {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		padding: 2em 1em;
-		margin-top: 4em; /* Adjust according to the header height */
-		background-color: #E0DFE0; /* Change About Me section background color */
+		margin-top: 4em;
+		background-color: #E0DFE0;
 	}
 
 	.about-container {
@@ -184,7 +174,7 @@
 		align-items: flex-start;
 		max-width: 1500px;
 		width: 100%;
-		margin-left: 0em; /* Move the content to the left */
+		margin-left: 0em;
 		opacity: 0;
 		transform: translateY(20px);
 		animation: fadeInUp 1s forwards;
@@ -202,22 +192,22 @@
 		flex-direction: column;
 		align-items: center;
 		margin-right: 2em;
-		transform: translateY(-40px); /* Move the image 40px up */
+		transform: translateY(-40px);
 	}
 
 	.image-container {
-		width: 500px; /* Adjust the size as needed */
+		width: 500px;
 		height: 500px;
 		overflow: hidden;
 		border-radius: 40px;
-		margin-bottom: 0.5em; /* Reduce the margin to bring text closer */
+		margin-bottom: 0.5em;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-		transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
 	}
 
 	.image-container:hover {
-		transform: scale(1.05); /* Slight zoom on hover */
-		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+		transform: scale(1.05);
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 	}
 
 	.profile-image {
@@ -227,32 +217,32 @@
 	}
 
 	.left-section h1 {
-		font-size: 3em; /* Make the text larger */
-		margin: 0.2em 0; /* Reduce margin to bring closer to image */
-		text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Add text shadow */
+		font-size: 3em;
+		margin: 0.2em 0;
+		text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 	}
 
 	.left-section h2 {
-		font-size: 1.5em; /* Smaller text */
+		font-size: 1.5em;
 		color: gray;
 		margin: 0;
-		text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Add text shadow */
+		text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 	}
 
 	.about-content {
 		flex: 1;
-		padding-left: 2em; /* Move the text a bit to the right */
+		padding-left: 2em;
 	}
 
 	.about-content p {
 		font-size: 1.2em;
 		line-height: 1.6;
 		margin-top: 1em;
-		text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* Add text shadow */
+		text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
 	}
 
 	.contact-me {
-		margin-top: 6em; /* Move the Contact Me section lower */
+		margin-top: 6em;
 		text-align: center;
 	}
 
@@ -263,19 +253,18 @@
 
 	.linkedin-logo,
 	.email-logo {
-		width: 64px; /* Make the logos bigger */
+		width: 64px;
 		height: 64px;
-		transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition */
-		margin: 0 1em; /* Add space between the logos */
+		transition: transform 0.3s ease, filter 0.3s ease;
+		margin: 0 1em;
 	}
 
 	.linkedin-logo:hover,
 	.email-logo:hover {
-		transform: rotate(360deg) scale(1.2); /* Rotate and scale up on hover */
-		filter: brightness(1.2); /* Brighten on hover */
+		transform: rotate(360deg) scale(1.2);
+		filter: brightness(1.2);
 	}
 
-	/* Skills section styling */
 	#skills {
 		padding: 2em 1em;
 		background-color: #f7f7f7;
@@ -307,7 +296,6 @@
 		border-radius: 5px;
 	}
 
-	/* Interests section styling */
 	#interests {
 		padding: 2em 1em;
 		background-color: #e0e0e0;
@@ -324,7 +312,6 @@
 		margin-bottom: 1em;
 	}
 
-	/* Timeline section styling */
 	#timeline {
 		padding: 2em 1em;
 		background-color: #f7f7f7;
@@ -344,6 +331,9 @@
 	.timeline-container ul {
 		list-style: none;
 		padding: 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
 	}
 
 	.timeline-container li {
@@ -361,14 +351,13 @@
 		margin-bottom: 0.5em;
 	}
 
-	/* Projects section styling */
 	#projects {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		padding: 2em 1em;
-		background-color: #E0DFE0; /* Match the background color */
-		min-height: 50vh; /* Ensure the section has some height */
+		background-color: #E0DFE0;
+		min-height: 50vh;
 	}
 
 	.projects-container {
@@ -378,10 +367,9 @@
 	.projects-container h1 {
 		font-size: 2.5em;
 		color: gray;
-		text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* Add text shadow */
+		text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
 	}
 
-	/* Section divider */
 	.divider {
 		width: 100%;
 		height: 100px;
@@ -399,5 +387,70 @@
 			opacity: 1;
 		}
 	}
-</style>
 
+	@media (max-width: 768px) {
+		.about-container {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.left-section {
+			margin-right: 0;
+			transform: translateY(0);
+		}
+
+		.image-container {
+			width: 80%;
+			height: auto;
+		}
+
+		.left-section h1 {
+			font-size: 2em;
+		}
+
+		.left-section h2 {
+			font-size: 1.2em;
+		}
+
+		.about-content {
+			padding-left: 0;
+			padding-top: 1em;
+			text-align: center;
+		}
+
+		.about-content p {
+			font-size: 1em;
+		}
+
+		.contact-me {
+			margin-top: 2em;
+		}
+
+		.contact-me h2 {
+			font-size: 1.5em;
+		}
+
+		.linkedin-logo,
+		.email-logo {
+			width: 40px;
+			height: 40px;
+		}
+
+		.skills-container h2,
+		.interests-container h2,
+		.timeline-container h2 {
+			font-size: 2em;
+		}
+
+		.skills-container ul,
+		.timeline-container ul {
+			flex-direction: column;
+		}
+
+		.skills-container li,
+		.timeline-container li {
+			width: 80%;
+			max-width: none;
+		}
+	}
+</style>
