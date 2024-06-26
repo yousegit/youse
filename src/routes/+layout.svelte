@@ -35,7 +35,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background: grey no-repeat center center/cover; /* Parallax background */
+		background: #d0cccc no-repeat center center/cover; /* Parallax background */
 		padding: 0;
 		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 		position: sticky;
