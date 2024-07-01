@@ -15,11 +15,9 @@
 		</div>
 		<div class="about-content">
 			<p>
-				Hello! My name is Yousef, and I have always been deeply interested in technology. Over the years, I have completed several internships and taken advanced classes such as AP Computer Science Principles and AP Computer Science A. These experiences have not only deepened my passion for technology but also equipped me with valuable skills. As I look towards the future, I plan to study computer science at university to further my knowledge and contribute to this exciting field.
+				Hello! My name is Yousef, and I have always been deeply interested in technology. Over the years, I have completed several internships and taken advanced classes such as AP Computer Science Principles and AP Computer Science A. These experiences have not only deepened my passion for technology but also equipped me with valuable skills. As a high school senior living in Zurich, Switzerland, I look towards the future with plans to study computer science at university to further my knowledge and contribute to this exciting field.
 			</p>
-			<p>
-				Beyond my academic pursuits, I'm a high school senior. I'm a member of both the varsity swim and cross country teams at my school, and I have a passion for skiing. Living in Zurich, Switzerland, I enjoy hanging out with friends, playing sports, and exploring my interests. Whether it's diving into a new hobby or just having fun, I'm always eager to make the most of my time and experiences.
-			</p>
+			
 			<div class="contact-me">
 				<h2>Contact Me</h2>
 				<a href="https://www.linkedin.com/in/yousef-al-saleh-998564272/" target="_blank">
@@ -52,7 +50,7 @@
 <section id="interests">
 	<div class="interests-container">
 		<h2>Interests</h2>
-		<p>I have a passion for skiing, swimming, and cross country running. In my free time, I enjoy exploring new technologies, coding personal projects, and spending time with friends. Living in Zurich, I also love to take advantage of the beautiful outdoor opportunities available in Switzerland. Additionally, I am very interested in fashion and streetwear, often keeping up with the latest trends and styles.</p>
+		<p>I'm a member of both the varsity swim and cross-country teams at my school. I enjoy skiing, playing sports, hanging out with friends, and exploring new hobbies. In my free time, I also enjoy exploring new technologies, coding personal projects, and keeping up with the latest trends in fashion and streetwear. Living in Zurich, I love to take advantage of the beautiful outdoor opportunities available in Switzerland.</p>
 	</div>
 </section>
 
@@ -67,16 +65,16 @@
 			<li>
 				<span>2023</span>
 				<p>Completed AP Computer Science A</p>
-				<p>Started interning at Hebbian</p>
+				<p>Started interning at <a href="https://www.hebbian.ch" target="_blank">Hebbian</a></p>
 			</li>
 			<li>
 				<span>2024</span>
-				<p>Started interning at Thomson Reuters</p>
-				<p>Started interning at Liip AG</p>
+				<p>Started interning at <a href="https://www.thomsonreuters.com" target="_blank">Thomson Reuters</a></p>
+				<p>Started interning at <a href="https://www.liip.ch" target="_blank">Liip AG</a></p>
 			</li>
 			<li>
 				<span>2025</span>
-				<p>Expected to graduate in the summer</p>
+				<p>Expected to graduate in the spring</p>
 			</li>
 		</ul>
 	</div>
@@ -237,12 +235,12 @@
 	.about-content p {
 		font-size: 1.2em;
 		line-height: 1.6;
-		margin-top: 1em;
+		margin-top: 3em;
 		text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
 	}
 
 	.contact-me {
-		margin-top: 6em;
+		margin-top: 7em;
 		text-align: center;
 	}
 
@@ -260,7 +258,7 @@
 	}
 
 	.linkedin-logo:hover,
-	.email-logo:hover {
+		email-logo:hover {
 		transform: rotate(360deg) scale(1.2);
 		filter: brightness(1.2);
 	}
@@ -349,6 +347,25 @@
 		font-weight: bold;
 		display: block;
 		margin-bottom: 0.5em;
+	}
+
+	/* New styles for hyperlinks */
+	a {
+		color: #007BFF; /* Change this to your desired color */
+		text-decoration: none; /* Optional: remove underline */
+	}
+
+	a:hover {
+		color: #0056b3; /* Change this to your desired hover color */
+		text-decoration: underline; /* Optional: add underline on hover */
+	}
+
+	a:active {
+		color: #0056b3; /* Change this to your desired active color */
+	}
+
+	a:visited {
+		color: #6c757d; /* Change this to your desired visited color */
 	}
 
 	#projects {
