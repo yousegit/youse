@@ -60,21 +60,29 @@
 		<ul>
 			<li>
 				<span>2022</span>
-				<p>Took first computer science class (AP Computer Science Principles)</p>
+				<div class="content">
+					<p>Took first computer science class (AP Computer Science Principles)</p>
+				</div>
 			</li>
 			<li>
 				<span>2023</span>
-				<p>Completed AP Computer Science A</p>
-				<p>Started interning at <a href="https://www.hebbian.ch" target="_blank">Hebbian</a></p>
+				<div class="content">
+					<p>Completed AP Computer Science A</p>
+					<p>Started interning at <a href="https://www.hebbian.ch" target="_blank">Hebbian</a></p>
+				</div>
 			</li>
 			<li>
 				<span>2024</span>
-				<p>Started interning at <a href="https://www.thomsonreuters.com" target="_blank">Thomson Reuters</a></p>
-				<p>Started interning at <a href="https://www.liip.ch" target="_blank">Liip AG</a></p>
+				<div class="content">
+					<p>Started interning at <a href="https://www.thomsonreuters.com" target="_blank">Thomson Reuters</a></p>
+					<p>Started interning at <a href="https://www.liip.ch" target="_blank">Liip AG</a></p>
+				</div>
 			</li>
 			<li>
 				<span>2025</span>
-				<p>Expected to graduate in the spring</p>
+				<div class="content">
+					<p>Expected to graduate in the spring</p>
+				</div>
 			</li>
 		</ul>
 	</div>
@@ -258,7 +266,7 @@
 	}
 
 	.linkedin-logo:hover,
-		email-logo:hover {
+	.email-logo:hover {
 		transform: rotate(360deg) scale(1.2);
 		filter: brightness(1.2);
 	}
@@ -334,20 +342,32 @@
 		justify-content: center;
 	}
 
-	.timeline-container li {
-		background-color: #e0e0e0;
-		margin: 1em;
-		padding: 1em;
-		border-radius: 5px;
-		flex: 1;
-		max-width: 250px;
-	}
+.timeline-container li {
+    background-color: #e0e0e0;
+    margin: 1em;
+    padding: 1.5em; /* Adjust padding as needed */
+    border-radius: 5px;
+    flex: 1;
+    max-width: 250px;
+    height: 190px; /* Fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top */
+    align-items: center;
+    text-align: center; /* Center text inside the box */
+}
 
-	.timeline-container span {
-		font-weight: bold;
-		display: block;
-		margin-bottom: 0.5em;
-	}
+.timeline-container li p {
+    margin-top: 0.5em; /* Adjust margin as needed */
+    text-align: center; /* Center text inside paragraphs */
+}
+
+.timeline-container span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1em; /* Adjust margin as needed */
+    text-align: center; /* Center text inside span */
+}
 
 	/* New styles for hyperlinks */
 	a {
