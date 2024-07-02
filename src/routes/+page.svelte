@@ -52,7 +52,7 @@
 <section id="interests">
     <div class="interests-container">
         <h2>Interests</h2>
-        <p>I'm part of the varsity swim and cross-country teams at school. I love skiing, playing sports, hanging out with friends, and picking up new hobbies. In my free time, I'm into exploring new tech, coding personal projects, and keeping up with streetwear. Living in Zurich is great, and I love making the most of the beautiful outdoor spots around Switzerland.</p>
+        <p>I'm a member of the varsity swim and cross-country teams at school, and I enjoy skiing, playing sports, and hanging out with friends. I love picking up new hobbies, and in my free time, I explore new tech, code personal projects, and keep up with streetwear trends. Living in Zurich is amazing, and I make the most of the beautiful outdoor spots around Switzerland.</p>
     </div>
 </section>
 
@@ -71,13 +71,13 @@
                 <span>2023</span>
                 <div class="content">
                     <p>Completed AP Computer Science A</p>
-                    <p>Started interning at <a href="https://www.hebbian.ch" target="_blank">Hebbian</a></p>
+                    <p>Completed internship at <a href="https://www.hebbian.ch" target="_blank">Hebbian</a></p>
                 </div>
             </li>
             <li>
                 <span>2024</span>
                 <div class="content">
-                    <p>Started interning at <a href="https://www.thomsonreuters.com" target="_blank">Thomson Reuters</a></p>
+                    <p>Completed internship at <a href="https://www.thomsonreuters.com" target="_blank">Thomson Reuters</a></p>
                     <p>Started interning at <a href="https://www.liip.ch" target="_blank">Liip AG</a></p>
                 </div>
             </li>
