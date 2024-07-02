@@ -235,6 +235,7 @@ nav a:hover {
     font-size: 1.5em;
     color: gray;
     margin: 0;
+	transform: translateY(-8px);
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -244,14 +245,14 @@ nav a:hover {
 }
 
 .about-content p {
-    font-size: 1.2em;
+    font-size: 1.3em;
     line-height: 1.6;
     margin-top: 3em;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 .contact-me {
-    margin-top: 7em;
+    margin-top: 6.7em;
     text-align: center;
 }
 
@@ -402,16 +403,16 @@ a {
 }
 
 a:hover {
-    color: #007BFF; /* Change this to your desired hover color */
+    color: #cc00ff; /* Change this to your desired hover color */
     text-decoration: underline; /* Optional: add underline on hover */
 }
 
 a:active {
-    color: #007BFF; /* Change this to your desired active color */
+    color: #0056b3; /* Change this to your desired active color */
 }
 
 a:visited {
-    color: #007BFF; /* Change this to your desired visited color */
+    color: #0056b3; /* Change this to your desired visited color */
 }
 
 #projects {
@@ -451,7 +452,7 @@ a:visited {
     }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1030px) {
     .about-container {
         flex-direction: column;
         align-items: center;
