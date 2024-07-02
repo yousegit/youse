@@ -303,7 +303,16 @@ nav a:hover {
     margin: 0.5em;
     padding: 0.5em 1em;
     border-radius: 5px;
+    outline: 2px solid #d8d4d4;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, outline-color 0.3s ease;
 }
+
+.skills-container li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    outline-color: #007BFF; /* Change to your desired hover color */
+}
+
 
 #interests {
     padding: 2em 1em;
@@ -333,9 +342,11 @@ nav a:hover {
     position: relative;
 }
 
+
 .timeline-container h2 {
     font-size: 2.5em;
     margin-bottom: 1em;
+	
 }
 
 .timeline-container ul {
@@ -344,6 +355,7 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
+	
 }
 
 .timeline-container li {
@@ -359,7 +371,17 @@ nav a:hover {
     justify-content: flex-start; /* Align items to the top */
     align-items: center;
     text-align: center; /* Center text inside the box */
+    outline: 2px solid #5A5A5A; /* Example: 4px width, red color */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, outline-color 0.3s ease;
 }
+
+.timeline-container li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    outline-color: #007BFF; /* Change to your desired hover color */
+}
+
+
 
 .timeline-container li p {
     margin-top: 0.5em; /* Adjust margin as needed */
@@ -501,7 +523,7 @@ a:visited {
     top: 60%;
     left: -4%;
     right: -4%;
-    height: 7px;
+    height: 2px;
     background-color: #5A5A5A;
     z-index: 0; /* Ensure the line is behind the boxes */
     transform: translateY(-50%);
