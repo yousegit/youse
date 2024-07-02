@@ -402,16 +402,16 @@ a {
 }
 
 a:hover {
-    color: #0056b3; /* Change this to your desired hover color */
+    color: #007BFF; /* Change this to your desired hover color */
     text-decoration: underline; /* Optional: add underline on hover */
 }
 
 a:active {
-    color: #0056b3; /* Change this to your desired active color */
+    color: #007BFF; /* Change this to your desired active color */
 }
 
 a:visited {
-    color: #6c757d; /* Change this to your desired visited color */
+    color: #007BFF; /* Change this to your desired visited color */
 }
 
 #projects {
