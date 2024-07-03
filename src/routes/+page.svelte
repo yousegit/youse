@@ -37,9 +37,9 @@
     <div class="skills-container">
         <h2>Skills</h2>
         <ul>
-            <li>JavaScript</li>
-            <li>Python</li>
             <li>Java</li>
+            <li>Python</li>
+            <li>JavaScript</li>
             <li>HTML & CSS</li>
             <li>Adobe Premiere Pro</li>
             <li>Critical thinking</li>
