@@ -11,7 +11,7 @@
                 <img src="/betterpic.JPG" alt="Yousef" class="profile-image" loading="lazy" />
             </div>
             <h1>Hi, I'm Yousef</h1>
-            <h2>High school Student</h2>
+            <h2>High School Student</h2>
         </div>
         <div class="about-content">
             <p>
