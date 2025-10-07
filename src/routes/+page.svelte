@@ -11,11 +11,11 @@
                 <img src="/betterpic.JPG" alt="Yousef" class="profile-image" loading="lazy" />
             </div>
             <h1>Hi, I'm Yousef</h1>
-            <h2>High School Student</h2>
+            <h2>Student at Northeastern university</h2>
         </div>
         <div class="about-content">
             <p>
-                Hello! My name is Yousef, and I have always been deeply interested in technology. Over the years, I have completed several internships and taken advanced classes such as AP Computer Science Principles and AP Computer Science A. These experiences have not only deepened my passion for technology but also equipped me with valuable skills. As a high school senior living in Zurich, Switzerland, I look towards the future with plans to study computer science at university to further my knowledge and contribute to this exciting field.
+                Hello! My name is Yousef, and I've always been fascinated by the ways technology shapes the world around us. Over the years, I've completed internships at Liip AG, Thomson Reuters, and Hebbian, and taken advanced courses such as AP Computer Science A and AP Computer Science Principles. These experiences have strengthened my passion for coding, design, and problem-solving. As a first-year student at Northeastern University who grew up in Zurich, Switzerland, I look forward to expanding my skills in computer science and contributing to innovative, human-centered projects in the future.
 
 
             </p>
@@ -64,27 +64,25 @@
             <li>
                 <span>2022</span>
                 <div class="content">
-                    <p>Took first computer science class (AP Computer Science Principles)</p>
+                    <p>Took my first computer science class (AP Computer Science Principles) and discovered my passion for technology and creative problem-solving.</p>
                 </div>
             </li>
             <li>
                 <span>2023</span>
                 <div class="content">
-                    <p>Completed AP Computer Science A</p>
-                    <p>Completed internship at <a href="https://www.hebbian.ch" target="_blank">Hebbian</a></p>
+                    <p>Completed AP Computer Science A and a summer internship at <a href="https://www.hebbian.ch" target="_blank">Hebbian</a>, where I worked on marketing and educational technology projects and developed teamwork and leadership skills.</p>
                 </div>
             </li>
             <li>
                 <span>2024</span>
                 <div class="content">
-                    <p>Completed internship at <a href="https://www.thomsonreuters.com" target="_blank">Thomson Reuters</a></p>
-                    <p>Started interning at <a href="https://www.liip.ch" target="_blank">Liip AG</a></p>
+                    <p>Interned at <a href="https://www.liip.ch" target="_blank">Liip AG</a>, where I deepened my skills in web development, design, and performance optimization, and at <a href="https://www.thomsonreuters.com" target="_blank">Thomson Reuters</a>, where I gained insight into how technology drives collaboration across global teams.</p>
                 </div>
             </li>
             <li>
                 <span>2025</span>
                 <div class="content">
-                    <p>Expected to graduate in the spring</p>
+                    <p>Graduated from Zurich International School and began studying Computer Science at Northeastern University.</p>
                 </div>
             </li>
         </ul>
