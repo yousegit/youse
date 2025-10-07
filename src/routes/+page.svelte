@@ -360,19 +360,20 @@ nav a:hover {
 .timeline-container li {
     background-color: #e0e0e0;
     margin: 1em;
-    padding: 1.5em; /* Adjust padding as needed */
-    border-radius: 5px;
+    padding: 2em; /* more space inside */
+    border-radius: 8px;
     flex: 1;
-    max-width: 250px;
-    height: 190px; /* Fixed height */
+    max-width: 320px; /* wider boxes */
+    min-height: 260px; /* taller boxes */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Align items to the top */
+    justify-content: flex-start;
     align-items: center;
-    text-align: center; /* Center text inside the box */
-    outline: 2px solid #5A5A5A; /* Example: 4px width, red color */
+    text-align: center;
+    outline: 2px solid #5A5A5A;
     transition: transform 0.3s ease, box-shadow 0.3s ease, outline-color 0.3s ease;
 }
+
 
 .timeline-container li:hover {
     transform: scale(1.05);
