@@ -292,7 +292,7 @@
   }
   .film-viewport::before { top: 0; } .film-viewport::after { bottom: 0; }
   .film-viewport::after { z-index: 4; }
-  .film-track { display: flex; width: max-content; animation: filmscroll 48s linear infinite; }
+  .film-track { display: flex; width: max-content; animation: filmscroll 48s linear infinite; will-change: transform; }
   .film-viewport:hover .film-track { animation-play-state: paused; }
   .film-track .frame { flex: 0 0 clamp(220px, 26vw, 320px); aspect-ratio: 4 / 3; margin-right: 1rem; }
   @keyframes filmscroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
@@ -415,8 +415,8 @@
   <div class="eyebrow reveal">01 — Who</div>
   <div class="about-grid">
     <figure class="frame portrait reveal d1">
-      <img src="images/portrait.jpg" alt="Yousef Al-Saleh" />
-      <figcaption class="cap">guess where</figcaption>
+      <img src="images/portrait.jpg" alt="Yousef Al-Saleh" decoding="async" />
+      <figcaption class="cap">Boston</figcaption>
       <span class="scan"></span>
     </figure>
     <div class="about-text">
@@ -428,7 +428,7 @@
         <div class="row"><span>Based</span><span>Boston, MA</span></div>
         <div class="row"><span>Studying</span><span>Computer Science · Northeastern</span></div>
         <div class="row"><span>Building</span><span>Yousefully · since 2023</span></div>
-        <div class="row"><span>Stack</span><span>JavaScript · Python · Java</span></div>
+        <div class="row"><span>Stack</span><span>JavaScript · Svelte · Java</span></div>
         <div class="row"><span>Status</span><span style="color:var(--volt)">● open to opportunities</span></div>
       </div>
       </div>
@@ -441,11 +441,11 @@
   <div class="film-label">// in frames <b>—</b> running, building, and the in-between</div>
   <div class="film-viewport">
     <div class="film-track">
-    <figure class="frame film" data-frame="1"><img src="images/frame-1.jpg" alt="" /><figcaption class="cap">kuwait</figcaption><span class="scan"></span></figure>
-    <figure class="frame film" data-frame="2"><img src="images/frame-2.jpg" alt="" /><figcaption class="cap">zermatt</figcaption><span class="scan"></span></figure>
-    <figure class="frame film" data-frame="3"><img src="images/frame-3.jpg" alt="" /><figcaption class="cap">nyc</figcaption><span class="scan"></span></figure>
-    <figure class="frame film" data-frame="4"><img src="images/frame-4.jpg" alt="" /><figcaption class="cap">london</figcaption><span class="scan"></span></figure>
-    <figure class="frame film" data-frame="5"><img src="images/frame-5.jpg" alt="" /><figcaption class="cap">milano</figcaption><span class="scan"></span></figure>
+    <figure class="frame film" data-frame="1"><img src="images/frame-1.jpg" alt="" loading="lazy" decoding="async" /><figcaption class="cap">cross country</figcaption><span class="scan"></span></figure>
+    <figure class="frame film" data-frame="2"><img src="images/frame-2.jpg" alt="" loading="lazy" decoding="async" /><figcaption class="cap">new york</figcaption><span class="scan"></span></figure>
+    <figure class="frame film" data-frame="3"><img src="images/frame-3.jpg" alt="" loading="lazy" decoding="async" /><figcaption class="cap">in the lab</figcaption><span class="scan"></span></figure>
+    <figure class="frame film" data-frame="4"><img src="images/frame-4.jpg" alt="" loading="lazy" decoding="async" /><figcaption class="cap">poolside</figcaption><span class="scan"></span></figure>
+    <figure class="frame film" data-frame="5"><img src="images/frame-5.jpg" alt="" loading="lazy" decoding="async" /><figcaption class="cap">off the clock</figcaption><span class="scan"></span></figure>
     </div>
   </div>
 </div>
@@ -497,7 +497,7 @@
   <h2 class="reveal d1" style="margin-top:1.5rem;">Let's build<br /><a href="mailto:yousef@yousefully.com" data-cursor="email">something.</a></h2>
   <div class="socials reveal d2">
     <a href="mailto:yousef@yousefully.com" data-cursor="mail">Email</a>
-    <a href="https://www.linkedin.com/in/yousef-al-saleh-998564272/" target="_blank" rel="noopener" data-cursor="connect">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/yousef-alsaleh-998564272" target="_blank" rel="noopener" data-cursor="connect">LinkedIn</a>
   </div>
 </section>
 
@@ -725,12 +725,13 @@
   var ctx = canvas.getContext("2d");
   var W, H, particles = [], cmx = -999, cmy = -999;
   function resize() {
-    W = canvas.width = canvas.offsetWidth * (window.devicePixelRatio > 1 ? 1.4 : 1);
-    H = canvas.height = canvas.offsetHeight * (window.devicePixelRatio > 1 ? 1.4 : 1);
+    W = canvas.width = canvas.offsetWidth;
+    H = canvas.height = canvas.offsetHeight;
   }
   resize();
   window.addEventListener("resize", resize);
-  var N = reduce ? 0 : (window.innerWidth < 720 ? 70 : 150);
+  var N = reduce ? 0 : (window.innerWidth < 720 ? 50 : 110);
+  var heroVisible = true;
   for (var i = 0; i < N; i++) {
     particles.push({ x: Math.random() * W, y: Math.random() * H, vx: 0, vy: 0, life: Math.random() * 100 });
   }
@@ -746,7 +747,7 @@
   canvas.addEventListener("mouseleave", function () { cmx = -999; cmy = -999; });
   var tt = 0;
   function draw() {
-    if (reduce) return;
+    if (reduce || !heroVisible) return;
     ctx.fillStyle = "rgba(8,9,11,0.06)";
     ctx.fillRect(0, 0, W, H);
     tt += 0.0016;
@@ -771,6 +772,13 @@
       }
     }
     requestAnimationFrame(draw);
+  }
+  var heroSec = document.querySelector(".hero");
+  if (heroSec && "IntersectionObserver" in window) {
+    new IntersectionObserver(function (e) {
+      heroVisible = e[0].isIntersecting;
+      if (heroVisible && !reduce) requestAnimationFrame(draw);
+    }, { threshold: 0 }).observe(heroSec);
   }
   if (!reduce) draw();
 
