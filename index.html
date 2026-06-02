@@ -299,6 +299,14 @@
   @media (prefers-reduced-motion: reduce) {
     .film-viewport { overflow-x: auto; } .film-track { animation: none; width: auto; }
   }
+  /* Touch devices: phones fake :hover on tap, which froze the strip and stuck a highlight.
+     Show photos in colour, keep the strip moving, and disable tap-highlight. */
+  @media (hover: none) {
+    .frame img { filter: none; }
+    .frame.filled:hover img { filter: none; transform: none; }
+    .frame.filled:hover .cap { opacity: 0; }
+    .film-viewport:hover .film-track { animation-play-state: running; }
+  }
 
   /* ---------- TERMINAL ---------- */
   .term-wrap { max-width: 880px; margin: 3rem auto 0; }
@@ -441,11 +449,11 @@
   <div class="film-label">// in frames <b>—</b> running, building, and the in-between</div>
   <div class="film-viewport">
     <div class="film-track">
-    <figure class="frame film" data-frame="1"><img src="images/frame-1.jpg" alt="" loading="lazy" decoding="async" style="object-position: 50% 35%;" /><figcaption class="cap">kuwait</figcaption><span class="scan"></span></figure>
-    <figure class="frame film" data-frame="2"><img src="images/frame-2.jpg" alt="" loading="lazy" decoding="async" style="object-position: 90% 45%;" /><figcaption class="cap">zermatt</figcaption><span class="scan"></span></figure>
-    <figure class="frame film" data-frame="3"><img src="images/frame-3.jpg" alt="" loading="lazy" decoding="async" style="object-position: 90% 68%;" /><figcaption class="cap">nyc</figcaption><span class="scan"></span></figure>
-    <figure class="frame film" data-frame="4"><img src="images/frame-4.jpg" alt="" loading="lazy" decoding="async" style="object-position: 90% 68%;" /><figcaption class="cap">london</figcaption><span class="scan"></span></figure>
-    <figure class="frame film" data-frame="5"><img src="images/frame-5.jpg" alt="" loading="lazy" decoding="async" style="object-position: 50% 80%;" /><figcaption class="cap">milan</figcaption><span class="scan"></span></figure>
+    <figure class="frame film" data-frame="1"><img src="images/frame-1.jpg" alt="" decoding="async" style="object-position: 50% 35%;" /><figcaption class="cap">kuwait</figcaption><span class="scan"></span></figure>
+    <figure class="frame film" data-frame="2"><img src="images/frame-2.jpg" alt="" decoding="async" style="object-position: 90% 45%;" /><figcaption class="cap">zermatt</figcaption><span class="scan"></span></figure>
+    <figure class="frame film" data-frame="3"><img src="images/frame-3.jpg" alt="" decoding="async" style="object-position: 90% 68%;" /><figcaption class="cap">nyc</figcaption><span class="scan"></span></figure>
+    <figure class="frame film" data-frame="4"><img src="images/frame-4.jpg" alt="" decoding="async" style="object-position: 90% 68%;" /><figcaption class="cap">london</figcaption><span class="scan"></span></figure>
+    <figure class="frame film" data-frame="5"><img src="images/frame-5.jpg" alt="" decoding="async" style="object-position: 50% 80%;" /><figcaption class="cap">milan</figcaption><span class="scan"></span></figure>
     </div>
   </div>
 </div>
