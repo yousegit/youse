@@ -293,7 +293,7 @@
   .film-track { display: flex; width: max-content; animation: filmscroll var(--film-dur, 48s) linear infinite; }
   .film-viewport:hover .film-track { animation-play-state: paused; }
   .film-track .frame { flex: 0 0 clamp(220px, 26vw, 320px); aspect-ratio: 4 / 3; margin-right: 1rem; }
-  @keyframes filmscroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @keyframes filmscroll { from { transform: translateX(0); } to { transform: translateX(var(--film-shift, -50%)); } }
   @media (prefers-reduced-motion: reduce) {
     .film-track { animation: filmscroll var(--film-dur, 48s) linear infinite !important; width: max-content !important; }
   }
@@ -531,6 +531,9 @@
     var half = "";
     for (var c = 0; c < copies; c++) half += filmBase;
     ftrack.innerHTML = half + half;            // two identical halves → seamless loop
+    // slide by an EXACT pixel distance (one half) — percentages are unreliable on mobile Safari
+    var halfPx = ftrack.scrollWidth / 2;
+    ftrack.style.setProperty("--film-shift", "-" + halfPx + "px");
     // keep the scroll speed constant regardless of how many copies were needed
     ftrack.style.setProperty("--film-dur", (copies * 48) + "s");
   }
