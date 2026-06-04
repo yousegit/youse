@@ -873,7 +873,9 @@
         print('linkedin  <span class="hl">/in/yousef-al-saleh</span>');
         break;
       case "resume": case "cv":
-        print('<span class="muted">resume.pdf not found — drop yours in and link it here.</span>');
+        print('<span class="muted">opening cv.pdf in a new tab…</span>');
+        print('if nothing opens → <a class="hl" href="cv.pdf" target="_blank" rel="noopener" style="text-decoration:underline">download cv.pdf</a>');
+        window.open('basicresume1.pdf', '_blank', 'noopener');
         break;
       case "neofetch":
         print('<span class="hl">       /\\_/\\          </span> yousef@portfolio');
