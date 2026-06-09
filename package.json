@@ -1,0 +1,16 @@
+{
+  "name": "youse-personal-site",
+  "version": "1.0.0",
+  "description": "Yousef Al-Saleh's personal website",
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static HTML site - no build required'"
+  },
+  "keywords": ["portfolio", "personal-site"],
+  "author": "Yousef Al-Saleh",
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/analytics": "^1.1.1"
+  }
+}
